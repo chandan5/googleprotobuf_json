@@ -1,17 +1,17 @@
 package googleprotobuf_json;
-option java_outer_classname = "Googleprotobuf_json";
+option java_outer_classname = "ResultProto";
 
 message CourseMarks {
   optional string name = 1;
   optional int32 score = 2;
 }
 
-message Student {
+message StudentMsg {
   optional string name = 1;
   optional int32 rollNum = 2;
   repeated CourseMarks marks = 3;
 }
 
 message Result {
-  repeated Student student = 1;
+  repeated StudentMsg studentmsg = 1;
 }
